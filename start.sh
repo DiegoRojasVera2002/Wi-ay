@@ -5,7 +5,7 @@ echo ""
 
 # Activar entorno virtual y ejecutar backend
 echo "📦 Iniciando Backend (FastAPI)..."
-source venv/bin/activate
+source .venv/bin/activate
 uvicorn app.main:app --reload --port 8000 &
 BACKEND_PID=$!
 
