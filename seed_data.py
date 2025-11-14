@@ -27,7 +27,7 @@ def seed_database():
         user = User(
             email="estudiante@test.com",
             hashed_password=hashed,
-            full_name="Juan Pérez",
+            full_name="Diego Rojas",
             role="student",
             university="Universidad Nacional Mayor de San Marcos"
         )
@@ -122,6 +122,50 @@ Crea una función que calcule el gasto promedio de las transacciones.
             order=2
         )
         db.add(project1_2)
+
+        # Project 1.3
+        project1_3 = Project(
+            module_id=module1.id,
+            title="Sistema de Recomendación de Productos",
+            description="Desarrolla un motor de recomendación para productos financieros usando collaborative filtering",
+            company_name="InnovaBank",
+            difficulty=DifficultyLevel.INTERMEDIATE,
+            order=3
+        )
+        db.add(project1_3)
+
+        # Project 1.4
+        project1_4 = Project(
+            module_id=module1.id,
+            title="Análisis de Sentimiento en Redes",
+            description="Analiza tweets y comentarios para predecir tendencias del mercado financiero usando NLP",
+            company_name="MercadoPe",
+            difficulty=DifficultyLevel.INTERMEDIATE,
+            order=4
+        )
+        db.add(project1_4)
+
+        # Project 1.5
+        project1_5 = Project(
+            module_id=module1.id,
+            title="Predicción de Abandono de Clientes",
+            description="Crea un modelo de churn prediction para identificar clientes en riesgo de abandonar servicios bancarios",
+            company_name="Interbank",
+            difficulty=DifficultyLevel.ADVANCED,
+            order=5
+        )
+        db.add(project1_5)
+
+        # Project 1.6 - BCP (El más difícil)
+        project1_6 = Project(
+            module_id=module1.id,
+            title="Credit Scoring con Deep Learning",
+            description="Diseña un sistema avanzado de credit scoring usando redes neuronales para evaluar riesgo crediticio",
+            company_name="BCP",
+            difficulty=DifficultyLevel.ADVANCED,
+            order=6
+        )
+        db.add(project1_6)
 
         # Module 2: IoT y Automatización
         module2 = Module(
